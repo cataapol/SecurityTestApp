@@ -1,10 +1,8 @@
-package com.example.SpringSecApp.serivice;
+package com.example.SpringSecApp.service;
 
-import com.example.SpringSecApp.persistence.entity.Role;
 import com.example.SpringSecApp.persistence.entity.User;
 import com.example.SpringSecApp.persistence.repository.UserRepository;
 import org.springframework.beans.factory.annotation.*;
-import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
@@ -13,7 +11,6 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.HashSet;
-import java.util.Optional;
 import java.util.Set;
 
 @Service
